@@ -1,11 +1,11 @@
 <?php 
 
 session_set_cookie_params([
-    'lifetime' => 3600,   // 1 hour
+    'lifetime' => 3600,  
     'path'     => '/',
     'domain'   => 'example.com',
-    'secure'   => true,   // only HTTPS
-    'httponly' => true,   // not accessible via JS
+    'secure'   => true,  
+    'httponly' => true,   
     'samesite' => 'Strict'
 ]);
 
@@ -13,7 +13,7 @@ session_set_cookie_params([
 session_start();
 require_once 'config.php';
 
-// Helper functions and error/session setup
+
 $errors = [
     'login' => $_SESSION['login-error'] ?? '',
     'register' => $_SESSION['register-error'] ?? ''
@@ -29,7 +29,7 @@ function isActiveForm($formName, $activeForm) {
     return $formName === $activeForm ? 'active' : '';
 }
 
-// Registration logic
+
 if (isset($_POST['register'])) {
     $username = $_POST['name'];
     $email    = $_POST['email'];
@@ -56,14 +56,14 @@ if (isset($_POST['register'])) {
         $stmt->execute();
         $stmt->close();
 
-        // Clear session errors after successful registration
+        
         unset($_SESSION['register-error'], $_SESSION['active_form']);
         header("Location: login.html");
         exit();
     }
 }
 
-// Login logic
+
 if (isset($_POST['login'])) {
     $email    = $_POST['email'];
     $password = $_POST['password'];
@@ -77,7 +77,7 @@ if (isset($_POST['login'])) {
         $user = $result->fetch_assoc();
         if (password_verify($password, $user['Mot_de_passe'])) {
           
-            // Successful login
+         
 
             unset($_SESSION['login-error'], $_SESSION['active_form']);
             header("Location: dashboard.html");
