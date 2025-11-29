@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +49,7 @@ body::before {
     animation: particleFloat 30s ease-in-out infinite;
 }
 
-/* Light mode background pattern */
+
 body::before {
     background: 
         radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.06) 0%, transparent 50%),
@@ -61,7 +60,7 @@ body::before {
         radial-gradient(circle at 90% 10%, rgba(168, 85, 247, 0.04) 0%, transparent 50%);
 }
 
-/* Subtle Grid Pattern */
+
 body::after {
     content: '';
     position: fixed;
@@ -74,7 +73,7 @@ body::after {
     animation: gridFloat 25s ease-in-out infinite;
 }
 
-/* Light mode grid pattern */
+
 body::after {
     background-image: 
         linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
@@ -86,77 +85,17 @@ body::after {
     opacity: 0.4;
 }
 
-/* Floating Particles Animation */
-@keyframes gridFloat {
-    0%, 100% {
-        transform: translateY(0px) translateX(0px) rotate(0deg);
-        opacity: 0.4;
-    }
-    16.66% {
-        transform: translateY(-1px) translateX(0.5px) rotate(0.1deg);
-        opacity: 0.5;
-    }
-    33.33% {
-        transform: translateY(-2px) translateX(-0.5px) rotate(-0.1deg);
-        opacity: 0.45;
-    }
-    50% {
-        transform: translateY(-0.5px) translateX(1px) rotate(0.05deg);
-        opacity: 0.4;
-    }
-    66.66% {
-        transform: translateY(-2.5px) translateX(-1px) rotate(-0.15deg);
-        opacity: 0.5;
-    }
-    83.33% {
-        transform: translateY(-1.5px) translateX(0.8px) rotate(0.1deg);
-        opacity: 0.45;
-    }
-}
 
-/* Add floating particles */
 body {
     position: relative;
 }
 
 body::before {
     animation: particleFloat 25s ease-in-out infinite;
+
+
 }
 
-@keyframes particleFloat {
-    0%, 100% {
-        transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
-        opacity: 0.06;
-    }
-    12.5% {
-        transform: translateY(-8px) translateX(3px) rotate(0.5deg) scale(1.02);
-        opacity: 0.08;
-    }
-    25% {
-        transform: translateY(-15px) translateX(-2px) rotate(1deg) scale(1.05);
-        opacity: 0.09;
-    }
-    37.5% {
-        transform: translateY(-10px) translateX(4px) rotate(-0.5deg) scale(1.03);
-        opacity: 0.07;
-    }
-    50% {
-        transform: translateY(-5px) translateX(-3px) rotate(0deg) scale(1.01);
-        opacity: 0.06;
-    }
-    62.5% {
-        transform: translateY(-12px) translateX(2px) rotate(0.8deg) scale(1.04);
-        opacity: 0.08;
-    }
-    75% {
-        transform: translateY(-18px) translateX(-1px) rotate(-1deg) scale(1.06);
-        opacity: 0.09;
-    }
-    87.5% {
-        transform: translateY(-7px) translateX(3px) rotate(0.3deg) scale(1.02);
-        opacity: 0.07;
-    }
-}
 
 /* Header and Navbar Styles */
 .header-nav {
@@ -218,7 +157,7 @@ body::before {
     justify-content: center;
 }
 
-/* Ensure desktop navigation is visible on larger screens */
+
 @media (min-width: 769px) {
     .main-nav {
         display: flex !important;
@@ -475,54 +414,8 @@ body::before {
     
 }
 
-.article-lwla::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:     
-        linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
-    animation: shimmer 3s ease-in-out infinite;
-}
 
-/* Floating particles animation */
-@keyframes floatingBubbles {
-    0%, 100% {
-        transform: translateY(0px) rotate(0deg);
-        opacity: 0.7;
-    }
-    25% {
-        transform: translateY(-20px) rotate(90deg);
-        opacity: 1;
-    }
-    50% {
-        transform: translateY(-10px) rotate(180deg);
-        opacity: 0.8;
-    }
-    75% {
-        transform: translateY(-30px) rotate(270deg);
-        opacity: 0.9;
-    }
-}
 
-/* Shimmer effect animation */
-@keyframes shimmer {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-}
-
-/* Content positioning */
 .article-lwla h1 {
     position: relative;
     z-index: 2;
@@ -549,7 +442,8 @@ body::before {
     animation: fadeInUp 1s ease-out 0.6s both;
 }
 
-/* Statistics section styling */
+
+
 .article-lwla > div:last-child {
     display: flex;
     gap: 3rem;
@@ -582,7 +476,7 @@ body::before {
     margin: 0.5rem 0;
 }
 
-/* Statistics number styling */
+
 .article-lwla > div:last-child p {
     font-size: 1.5rem;
     font-weight: 700;
@@ -595,19 +489,8 @@ body::before {
     opacity: 0.9;
 }
 
-/* Fade in animation for content */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* Professional Button Styling */
+
 .article-lwla > div:first-of-type {
     display: flex;
     gap: 1.5rem;
@@ -709,7 +592,7 @@ body::before {
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
-/* Add card-like depth and professional styling */
+
 .article-lwla .btnArticle::after {
     content: '';
     position: absolute;
@@ -2976,7 +2859,7 @@ section > p {
 /* ===== CART PAGE STYLES ===== */
 .cart-section {
     padding: 2rem 0;
-    min-height: 80vh;
+    min-height: 6vh;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 

@@ -265,6 +265,7 @@
     appearance:none;
     -webkit-appearance:none;
     -moz-appearance:none;
+    
 
   }
   
@@ -300,11 +301,11 @@
     height: 100%;
     background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   }
-  
+   
   .course-content {
     padding: 1.5rem;
   }
-  
+   
   .course-category {
     background: #f1f5f9;
     color: #475569;
@@ -315,7 +316,7 @@
     display: inline-block;
     margin-bottom: 1rem;
   }
-  
+   
   .course-title {
     font-size: 1.2rem;
     font-weight: 600;
@@ -323,7 +324,7 @@
     margin-bottom: 0.5rem;
     line-height: 1.4;
   }
-  
+   
   .course-instructor {
     color: #64748b;
     font-size: 0.9rem;
@@ -548,7 +549,7 @@
     opacity: 0.9;
   }
   
-  /* Footer styles */
+ 
   .footers {
     background-color: #2d3748;
     color: #E2E8F0;
@@ -570,7 +571,6 @@
     flex-direction: column;
   }
   
-  /* Company info section */
   .company-info {
     display: flex;
     flex-direction: column;
@@ -639,7 +639,7 @@
     transform: translateY(-2px);
   }
   
-  /* Footer headings */
+
   .footer-heading {
     font-size: 18px;
     font-weight: 600;
@@ -666,7 +666,7 @@
     color: #2563EB;
   }
   
-  /* Contact info */
+  
   .contact-info {
     display: flex;
     flex-direction: column;
@@ -693,8 +693,7 @@
     background-color: #4A5568;
     margin: 25px 0;
   }
-  
-  /* Demo access */
+
   .demo-access h5 {
     color: white;
     font-size: 16px;
@@ -723,7 +722,6 @@
     background-color: #4A5568;
   }
   
-  /* Copyright */
   .copyright {
     background-color: #1A202C;
     padding: 20px;
@@ -736,7 +734,7 @@
     font-size: 14px;
   }
   
-  /* Help button */
+
   .help-button {
     position: fixed;
     bottom: 30px;

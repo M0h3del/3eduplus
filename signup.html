@@ -34,7 +34,7 @@
             </div>
 
             <!-- Signup Form -->
-            <form class="auth-form active" id="signup-form" method="post" action="#">
+            <form class="auth-form active" id="signup-form" method="post" action="signup.php">
                 <div class="form-group">
                     <label for="signup-name">Nom complet</label>
                     <div class="input-wrapper">
@@ -60,12 +60,55 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="signup-confirm">Confirmer le mot de passe</label>
+                    <label for="Wilaya">Wilaya</label>
                     <div class="input-wrapper">
                         <i class="fas fa-lock"></i>
-                        <input type="password" id="signup-confirm" name="confirm-password" placeholder="Confirmez votre mot de passe" required>
+                        <input type="text" id="Wilaya" name="wilaya" placeholder="Wilaya" required>
                     </div>
                 </div>
+
+                
+                /*numero date image gender*/  
+                    
+                <div class="form-group">
+                    <label for="numero_tlf_utilisateur">Numéro de téléphone</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="numero_tlf_utilisateur" name="numero_tlf_utilisateur" placeholder="Ex: +213..." required>
+                    </div>
+                </div>          
+                           
+                <div class="form-group">
+                    <label for="date_registration">Date d'inscription</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input type="date" id="date_registration" name="date_registration" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="image_utilisateur">Image utilisateur</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-image"></i>
+                        <input type="file" id="image_utilisateur" name="image_utilisateur" accept="image/*">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Genre</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <select id="gender" name="gender" required>
+                            <option value="">-- Sélectionnez --</option>
+                            <option value="male">Homme</option>
+                            <option value="female">Femme</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
 
                 <div class="form-options">
                     <label class="checkbox-wrapper">
@@ -75,7 +118,7 @@
                     </label>
                 </div>
 
-                <button type="submit" class="auth-btn">
+                <button type="submit" class="auth-btn" name="register">
                     <i class="fas fa-user-plus"></i>
                     Créer un compte
                 </button>
