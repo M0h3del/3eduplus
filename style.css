@@ -25,7 +25,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Light mode background */
+
 body {
     background: 
         radial-gradient(circle at 15% 85%, rgba(59, 130, 246, 0.08) 0%, transparent 60%),
@@ -36,7 +36,7 @@ body {
         linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);
 }
 
-/* Professional Background Pattern */
+
 body::before {
     content: '';
     position: fixed;
@@ -97,7 +97,7 @@ body::before {
 }
 
 
-/* Header and Navbar Styles */
+
 .header-nav {
     width: 100%;
     display: flex;
@@ -129,7 +129,7 @@ body::before {
 
 
 }
-/* Light mode header background */
+
 .header-nav {
     background: #f3f8fdc4;
         color: #f3f8fdc4;
@@ -243,7 +243,7 @@ body::before {
     box-shadow: 0 1px 12px rgba(0, 102, 255, 0.301);
 }
 
-/* Mobile Navigation Styles */
+
 @media (max-width: 768px) {
     .main-nav {
         position: absolute;
@@ -297,7 +297,7 @@ body::before {
     }
 }
 
-/* Hide desktop navigation on mobile */
+
 @media (max-width: 768px) {
     .main-nav {
         display: none;
@@ -308,7 +308,7 @@ body::before {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .header-nav {
         padding: 1rem;
@@ -377,7 +377,7 @@ body::before {
     }
 }
 
-/* Article LWLA Styles */
+
 .article-lwla {
     width: 100%;
     position: relative;
@@ -398,7 +398,7 @@ body::before {
     height: 50px;
 }
 
-/* Animated background elements */
+
 .article-lwla::before {
     content: '';
     position: absolute;
@@ -614,7 +614,7 @@ body::before {
     opacity: 1;
 }
 
-/* Add subtle animation for card effect */
+
 .article-lwla .btnArticle {
     animation: cardFloat 8s ease-in-out infinite;
 }
@@ -638,23 +638,23 @@ body::before {
     animation: none;
 }
 
-/* Add focus states for accessibility */
+
 .article-lwla .btnArticle:focus {
     outline: 3px solid rgba(7, 106, 255, 0.5);
     outline-offset: 2px;
 }
 
-/* Add 
 
 
 
-state */
+
+
 .article-lwla .btnArticle:active {
     transform: translateY(-8px) scale(0.98);
     transition: all 0.1s ease;
 }
 
-/* Responsive design for article */
+
 @media (max-width: 768px) {
     .article-lwla {
         height: 400px;
@@ -714,7 +714,7 @@ state */
         text-align: left;
     }
     
-    /* Button cards responsive */
+  
     .article-lwla > div:first-of-type {
         flex-direction: column;
         align-items: center;
@@ -728,7 +728,7 @@ state */
     }
 }
 
-/* Professional Card Design for Categories */
+
 section {
     width: 100%;
     padding: 4rem 2rem;
@@ -742,7 +742,7 @@ section {
     backdrop-filter: blur(1px);
 }
 
-/* Add subtle section borders */
+
 section::before {
     content: '';
     position: absolute;
@@ -781,7 +781,7 @@ section > p {
     margin-right: auto;
 }
 
-/* Categories Grid */
+
 .categories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -853,7 +853,7 @@ section > p {
     margin: 0;
 }
 
-/* Why Choose Us Section */
+
 .why-choose-section {
     background: white;
     padding: 4rem 2rem;
@@ -929,7 +929,7 @@ section > p {
     margin: 0;
 }
 
-/* Popular Courses Section */
+
 .courses-section {
     background: #f8fafc;
     padding: 4rem 2rem;
@@ -997,7 +997,7 @@ section > p {
     flex-direction: column;
 }
 
-/* Course Image Styles */
+
 .course-image {
     position: relative;
     width: 100%;
@@ -1188,7 +1188,7 @@ section > p {
     box-shadow: 0 4px 12px rgba(251, 191, 36, 0.4);
 }
 
-/* Animated star effects */
+
 .stars {
     position: relative;
     display: inline-block;
@@ -1222,7 +1222,7 @@ section > p {
     }
 }
 
-/* Add subtle glow effect to testimonial cards */
+
 .testimonial-card::before {
     content: '';
     position: absolute;
@@ -1262,7 +1262,7 @@ section > p {
     font-size: 0.9rem;
 }
 
-/* CTA Section */
+
 .cta-section {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -1276,7 +1276,7 @@ section > p {
     overflow: hidden;
 }
 
-/* CTA Background Animations */
+
 .cta-section::before {
     content: '';
     position: absolute;
@@ -1410,7 +1410,7 @@ section > p {
     transition: all 0.1s ease;
 }
 
-/* Professional Footer Styles */
+
 .footer {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -1645,7 +1645,7 @@ section > p {
     color: #0066ff;
 }
 
-/* Enhanced Responsive Design */
+
 @media (max-width: 1200px) {
     .footer-content {
         grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -1659,7 +1659,7 @@ section > p {
 }
 
 @media (max-width: 768px) {
-    /* General responsive adjustments */
+
     .categories-grid,
     .features-grid,
     .courses-grid,
@@ -1695,7 +1695,7 @@ section > p {
         font-size: 1rem;
     }
     
-    /* Header responsive */
+   
     .header-nav {
         flex-wrap: wrap;
         padding: 1rem;
@@ -1712,7 +1712,7 @@ section > p {
         gap: 1rem;
     }
     
-    /* Footer responsive */
+  
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1750,7 +1750,7 @@ section > p {
 }
 
 @media (max-width: 480px) {
-    /* Mobile specific adjustments */
+
     .header-nav {
         padding: 0.5rem;
     }
@@ -1799,7 +1799,6 @@ section > p {
     }
 }
 
-/* Login/Signup Page Styles */
 .auth-container {
     min-height: 100vh;
     display: flex;
@@ -2135,7 +2134,7 @@ section > p {
     color: #0066ff;
 }
 
-/* Responsive Design for Auth */
+
 @media (max-width: 768px) {
     .auth-container {
         padding: 1rem;
@@ -2174,7 +2173,7 @@ section > p {
     }
 }
 
-/* About Page Styles */
+
 .about-hero {
     background: linear-gradient(135deg, #1a6dcc 0%, #022d63 30%, #003c80 65%, #1b96c7e1 80%);
     color: white;
@@ -2502,14 +2501,14 @@ section > p {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Active navigation link */
+
 .nav-links li a.active {
     color: #1f5ebc;
     background-color: #6db4ff76;
     border-radius: 20px;
 }
 
-/* Responsive Design for About Page */
+
 @media (max-width: 768px) {
     .about-hero h1 {
         font-size: 2.5rem;
@@ -2636,7 +2635,7 @@ section > p {
     margin-bottom: 3rem;
 }
 
-/* FAQ Styles */
+
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -2708,7 +2707,7 @@ section > p {
     margin: 0;
 }
 
-/* Blog Styles */
+
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -2856,7 +2855,7 @@ section > p {
     }
 }
 
-/* ===== CART PAGE STYLES ===== */
+
 .cart-section {
     padding: 2rem 0;
     min-height: 6vh;
@@ -3147,7 +3146,7 @@ section > p {
     color: #007bff;
 }
 
-/* ===== SEARCH INPUT STYLES ===== */
+
 .search-container {
     position: relative;
     display: flex;
@@ -3205,7 +3204,7 @@ section > p {
     font-size:1rem;
 }
 
-/* Search results dropdown */
+
 .search-results {
     position: absolute;
     top: 100%;
@@ -3256,7 +3255,7 @@ section > p {
     font-style: italic;
 }
 
-/* ===== SEARCH RESPONSIVE STYLES ===== */
+
 @media (max-width: 768px) {
     .search-container {
         margin-right: 0.5rem;
@@ -3314,7 +3313,7 @@ section > p {
     }
 }
 
-/* Cart Responsive */
+
 @media (max-width: 768px) {
     .cart-content {
         grid-template-columns: 1fr;
